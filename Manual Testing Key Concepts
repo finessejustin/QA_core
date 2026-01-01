@@ -1,0 +1,72 @@
+Module 1.1
+ERROR (Due to Human mistake)
+    ↓
+DEFECT/BUG (Usually In code)
+    ↓
+FAILURE (A System crash or wrong output from an Application)
+
+Real World Example:
+ERROR: Developer types "if (age > 18)" instead of "if (age >= 18)" while coding an application
+DEFECT: Code contains wrong logic
+FAILURE: 18-year-old users can't register in the Application(Could result to Revenue losses, etc)
+
+VERIFICATION: "Are we building the product right?"
+- Reviews, inspections, walkthroughs
+- Checks process compliance
+- Example: Code review to check coding standards
+
+VALIDATION: "Are we building the right product?"
+- Actual testing against business requirements
+- End-user perspective
+- Example: Testing to ensure the "login" feature works as Users expect
+
+QA vs QC(Diff)
+QA (Process-oriented):
+- Proactive
+- Preventing defects
+- Process improvement
+- Example: Creating test standards, code review checklists
+
+QC (Product-oriented):
+- Reactive
+- Finding defects
+- Testing actual product
+- Example: Executing test cases, reporting bugs
+
+Module 1.2: Software Development Life Cycle (60 min)
+Key SDLC Models
+1. Waterfall Model
+
+Requirements → Design → Development → Testing → Deployment → Maintenance
+     ↓           ↓           ↓            ↓          ↓
+   (Sequential - each phase completes before next begins)
+Usage: Regulated industries e.g Healthcare, Government etc
+QA Entry Point: After development completes
+Pros: Clear documentation, structured
+Cons: Late bug discovery, inflexible to changes
+
+2. Agile/Scrum Model 
+Sprint Planning → Development + Testing → Review → Retrospective
+        ↓                                    ↑
+        └─────────────── (Repeat) ──────────┘
+        
+Sprints last = 2-4 weeks of work (Total Project SDLC timeline broken down into Sprints)
+Real-World Agile Sprint Example:
+Day 1-2: Sprint Planning
+- User story: "As a user, I want to login with email and password"
+- Acceptance criteria defined
+- QA reviews requirements, asks questions
+
+Day 3-8: Development + Testing (Parallel)
+- Developer codes login feature
+- QA writes test cases
+- QA tests each completed component
+- Daily standup: "I'm testing login API, found 2 bugs"
+
+Day 9: Sprint Review
+- Demo to stakeholders
+- QA presents test results: 45 test cases, 5 bugs found, 4 fixed
+
+Day 10: Retrospective
+- What went well: Early QA involvement caught design issues
+- What to improve: Need better test data management
