@@ -847,7 +847,6 @@ Look for:
 ```
 
 **TC-021: Room Selection**
-```
 Scenario: Select different room options
 
 1. Pick property with multiple room types
@@ -866,10 +865,8 @@ Test edge cases:
 - Select 10 rooms
 - Rapidly click "Select room" multiple times
 - Select room, go back, select different room
-```
 
 **TC-022: Reviews Section**
-```
 Test:
 1. Scroll to reviews
 2. Apply review filters:
@@ -894,8 +891,7 @@ EXPECTED BUG:
 
 ---
 
-**🔍 REAL BUG YOU'LL FIND:**
-```
+**🔍 REAL BUG YOU MAY FIND:**
 Title: Image gallery counter shows wrong total after filtering
 
 Steps:
@@ -913,14 +909,10 @@ Priority: Low
 
 Additional: When clicking "Next" on image 12, it shows image 13 (from unfiltered set)
 This is confusing UX - counter suggests 12 photos but you can access more
-```
-
----
 
 ### **Test Scenario 4: Booking Flow (60 min)**
 
 **TC-030: Guest Checkout**
-```
 Full booking simulation (DON'T actually book):
 
 1. Select property and room
@@ -973,7 +965,6 @@ Verify:
 ```
 
 **TC-032: Total Price Verification**
-```
 Critical test - verify price calculation:
 
 1. Note room price: $___
@@ -991,12 +982,8 @@ Test edge cases:
 - Long stays (30 nights) - does price change?
 - Multiple rooms (5+ rooms) - discounts applied?
 - Different dates - weekday vs weekend pricing
-```
 
----
-
-**🔍 REAL CRITICAL BUG YOU'LL FIND:**
-```
+**REAL CRITICAL BUG YOU MAY FIND:**
 Title: Can modify booking total by manipulating request payload
 
 Severity: CRITICAL
@@ -1026,14 +1013,10 @@ Recommendation:
   * Check-in/check-out dates
   * Number of rooms
 - Never trust client-provided total
-```
-
----
 
 ### **Test Scenario 5: Mobile Responsiveness (45 min)**
 
 **Setup:**
-```
 1. Open Chrome DevTools (F12)
 2. Click device toolbar icon (Ctrl+Shift+M)
 3. Test on multiple devices:
@@ -1041,10 +1024,8 @@ Recommendation:
    - iPhone 12 Pro (390×844)
    - iPad (768×1024)
    - Samsung Galaxy S20 (360×800)
-```
 
 **TC-040: Mobile Navigation**
-```
 For each device size:
 
 1. Check header/navigation:
@@ -1063,10 +1044,8 @@ For each device size:
    ✓ Filters accessible?
    ✓ Can apply filters easily?
    ✓ Does filter sheet open properly?
-```
 
 **TC-041: Touch Interactions**
-```
 Test gestures:
 1. Swipe on image gallery (left/right)
 2. Pinch to zoom on images
@@ -1079,10 +1058,8 @@ Issues to find:
 - Overlapping elements
 - Gestures not working
 - Accidental taps
-```
 
 **TC-042: Orientation Change**
-```
 Test flow:
 1. Open property page (portrait)
 2. Rotate to landscape (Ctrl+Shift+M, rotate icon)
@@ -1109,12 +1086,7 @@ Steps:
 3. Tap date field
 4. Try to select dates from calendar
 
-Expecte
-
-Continue
-28 Dec 2025
-
-d: Calendar opens, can easily select dates
+Expected: Calendar opens, can easily select dates
 Actual:
 
     Calendar UI overlaps with navigation bar
@@ -1134,9 +1106,6 @@ Recommendation:
     Implement mobile-optimized date picker
     Use native iOS date picker on mobile
     Increase touch target sizes to minimum 44×44 px
-
-
----
 
 ### **Test Scenario 6: Cross-Browser Testing (30 min)**
 
@@ -1173,10 +1142,7 @@ Animations       |   ✓    |    ?    |   ?    |  ?
     Record session
     Compare results
 
-
----
-
-**🔍 REAL BROWSER BUG YOU'LL FIND:**
+** BROWSER BUG YOU MAY FIND:**
 
 Title: Date picker animation broken in Firefox
 
@@ -1284,7 +1250,7 @@ Test interactions:
 
 ---
 
-**🔍 REAL PERFORMANCE BUG YOU'LL FIND:**
+**🔍 REAL PERFORMANCE BUG YOU MAY FIND:**
 
 Title: Homepage loads 3.2MB of images on initial load
 
@@ -1410,7 +1376,7 @@ Alerts: ___
 
 ---
 
-**🔍 REAL ACCESSIBILITY BUG YOU'LL FIND:**
+** REAL ACCESSIBILITY BUG YOU MAY FIND:**
 
 Title: Filter checkboxes missing accessible labels
 
@@ -1443,12 +1409,6 @@ Impact:
 Affected filters: 15 filters in sidebar
 Priority: High (accessibility lawsuit risk)
 
-
----
-
-## **END OF DAY 1 DELIVERABLES**
-
-**By end of Day 1, you should have:**
 
 ### **1. Bug Report Document**
 
@@ -1521,9 +1481,7 @@ Priority: High (accessibility lawsuit risk)
 ✓ Cross-browser (Chrome, Firefox)
 ✓ Performance
 ✓ Accessibility
-```
 
----
 
 ### **2. Create GitHub Repository**
 
@@ -1643,8 +1601,6 @@ Tools mastered today:
 ✅ WAVE accessibility testing
 ✅ NVDA screen reader
 ✅ Cross-browser testing tools
-
-This is just Day 1. 24 more days of intensive learning ahead!
 
 Full bug reports on my GitHub: [link]
 
@@ -2079,7 +2035,7 @@ Expected: Classified as Child, child fare applied
 TC-AGE-006: Age = 11 (child upper boundary - 1)
 Expected: Classified as Child
 
-TC-AGE-007: Age = 12 (boundary: child/adult)
+TC-AGE-007: Age = 12 (bou ndary: child/adult)
 Expected: Classified as Adult (or Child - clarify!)
 🚨 Critical boundary!
 
@@ -2550,8 +2506,6 @@ Expected:
     State: "Shipped - Under Investigation"
     Customer service can manually transition to "Refunded"
 
-
----
 
 **Real Example: User Account States**
 
