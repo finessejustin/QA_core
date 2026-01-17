@@ -20,7 +20,6 @@
 | UI/UX & Navigation | 4 |
 | **TOTAL** | **31** |
 
----
 
 ## 1. LOGIN FUNCTIONALITY
 
@@ -42,7 +41,6 @@
 - User should be redirected to the Products page
 - Product inventory should be visible
 
----
 
 ### TC-002: Verify Login with Invalid Username
 **Priority:** High  
@@ -62,7 +60,6 @@
 - Error message "Epic sadface: Username and password do not match any user in this service" should be displayed
 - User should remain on the login page
 
----
 
 ### TC-003: Verify Login with Invalid Password
 **Priority:** High  
@@ -82,7 +79,6 @@
 - Error message "Epic sadface: Username and password do not match any user in this service" should be displayed
 - User should remain on the login page
 
----
 
 ### TC-004: Verify Login with Empty Credentials
 **Priority:** High  
@@ -100,7 +96,6 @@
 - Error message "Epic sadface: Username is required" should be displayed
 - User should remain on the login page
 
----
 
 ### TC-005: Verify Login with Locked Out User
 **Priority:** High  
@@ -120,7 +115,6 @@
 - Error message "Epic sadface: Sorry, this user has been locked out." should be displayed
 - User should remain on the login page
 
----
 
 ### TC-006: Verify Error Message Close Button
 **Priority:** Medium  
@@ -140,7 +134,6 @@
 - Error styling on input fields should be removed
 - User should be able to re-enter credentials
 
----
 
 ### TC-007: Verify Logout Functionality
 **Priority:** High  
@@ -157,7 +150,6 @@
 - User should be redirected to the login page
 - Session should be cleared
 
----
 
 ## 2. PRODUCT LISTING & SORTING
 
@@ -175,7 +167,6 @@
 - Each product should have: image, name, description, price, and "Add to cart" button
 - Products should be displayed in grid format
 
----
 
 ### TC-009: Verify Sort by Name (A to Z)
 **Priority:** Medium  
@@ -193,7 +184,6 @@
 - First product should start with letter closest to A
 - Sort order should be maintained
 
----
 
 ### TC-010: Verify Sort by Name (Z to A)
 **Priority:** Medium  
